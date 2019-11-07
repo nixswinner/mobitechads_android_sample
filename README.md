@@ -37,3 +37,28 @@ allprojects {
         android:layout_width="320dp"
         android:layout_height="50dp"/>
 ```
+2.On your activity logic.
+  1.Find the view 
+  ```
+  MobiAdBanner bannerAd = findViewById(R.id.bannerAd);
+  ```
+  2.Load ads - specify ads category_id and pass the activity context
+  ```
+  bannerAd.getBannerAds(this,
+                "1");
+  ```
+  3.Auto Refresh banner - pass refresh rate (in minutes ) as an integer
+  ```
+   bannerAd3.getBannerAds(this,
+                "1", 1); //refresh after 1 minute
+  ```
+  
+  # Add Intertistial ad.
+  
+  Add the following code snippet on the activity logic
+  It takes 2 parameters - context and ads category_id - string
+  ```
+   MobitechAds.getIntertistialAd(
+                MainActivity.this,
+                "1");
+  ```
