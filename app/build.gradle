@@ -27,6 +27,6 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
     //
-    implementation 'com.github.nixswinner:mobitechads:0.3.0'
+    implementation 'com.github.nixswinner:mobitechads:1.0.0'
 
 }

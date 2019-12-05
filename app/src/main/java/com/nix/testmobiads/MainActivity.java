@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     //Init banner ads-----
     private MobiAdBanner bannerAd,bannerAd2,bannerAd3;
+    private String applicationId="45464";
     //............
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,11 +42,11 @@ public class MainActivity extends AppCompatActivity {
 
     //...fetch banner
     private void loadBannerAds(){
-        bannerAd.getBannerAds(this,
+        bannerAd.getBannerAds(this,applicationId,
                 "1");
-        bannerAd2.getBannerAds(this,
+        bannerAd2.getBannerAds(this,applicationId,
                 "2");
-        bannerAd3.getBannerAds(this,
+        bannerAd3.getBannerAds(this,applicationId,
                 "1",
                 1);
     }
@@ -53,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
     //optional method to fetch ads
     private void loadIntertistialAds(){
         MobitechAds.getIntertistialAd(
-                MainActivity.this,
+                MainActivity.this,applicationId,
                 "1");
     }
 
